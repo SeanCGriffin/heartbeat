@@ -27,7 +27,7 @@ begin
 
     count : process( rst_n, clk )
     begin
-        if rst_n = '1' then
+        if rst_n = '0' then
             counter <= (others=>'0');
             heartbeat <= '0';
         elsif rising_edge(clk) then
